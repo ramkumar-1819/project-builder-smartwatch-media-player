@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.screen1{
+    position: relative;
+    top:200px;          /*making scrren 1 and display in center of page with bg-color gary*/
+    width:200px;
+    height: 250px;
+    background-color: gray;
+    margin: auto;
+    border-radius: 40px;
+}
+.screen2{              /*making screen 2 inside screen 1 with bg-color black*/
+    position: relative;    
+    top:16px;                                                                                                                                                                                                                        
+    width:200px;
+    height:217px;
+    background-color: black;
+    border-radius: 40px;
+}
+.screen3{                /*first screen ie default screen is replaced with next screen ie screen1*/
+    height:160px;        /* this screen contain list of msgs*/
+    width:170px;
+    margin: auto;
+    background-color:white;
+    padding: 5px;
+    
+}
+.screen4{                        /*replace sceen1 with screen2 and this screen display the body of msg*/
+        height:115px;
+        width:120px;
+        margin: auto;
+        background-color:white;
+        border-radius: 25px;
+}
+/*small_time inside screen2*/
+.time_small{
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size:xx-small;
+}/*for time and day*/
+.time_day{
+    height:115px;
+    width:120px;
+    margin: auto;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 25px;
+}
+.time_big{
+    font-size: xx-large;
+}
+.day{
+    font-size: small;
+    color: white;
+}
+.images{    /*positioning the images as absolute ie based on its anchestor small_time*/
+    position: absolute;         /*displaying the final items as flex*/
+    top:185px;
+    width:200px;
+    display: flex;
+    justify-content: space-around;
+}
+.chat,.music,.clock{
+    color: white;
+    font-size: 20px;
+}
+
+.section1{
+    width: 160px;
+    height: 50px;
+    display: flex;
+    font-size: small;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+    background-color: rgb(150, 148, 148);
+}
+
+.section2{
+    margin-top:2px;
+    height:100px;
+    width:160px;
+    overflow-y: scroll;
+    color:white;
+    background-color: rgb(51, 50, 50);
+}
+.section2>div{
+    padding: 5px;
+    font-size: small;
+    font-weight: bold;
+}
+
+img{
+    width:35px;
+    height:45px;
+    margin:3px 5px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
